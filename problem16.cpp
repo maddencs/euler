@@ -25,7 +25,7 @@ int main() {
     } while (theNumber);
 
     for (int i = 1; i <= numberLen; i++) {
-        // TODO: Figure out why this works for example and other numbers, but not 2^1000
+        // TODO: Figure out why this works for example and other numbers, but not 2^1000(solution found, number is too big for double type)
         sum += fmod(numberCopy, 10);
         numberCopy /= 10;
     }
